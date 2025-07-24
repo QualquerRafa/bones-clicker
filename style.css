@@ -1,0 +1,122 @@
+:root {
+    --ui-white: #c0c0c0;
+    --ui-gray: #808080;
+    --ui-darkgray: #595959;
+    --ui-black: #252525;
+
+    --item-rarity-green: rgb(33,135,34);
+    --item-rarity-blue: rgb(43, 133, 166);
+    --item-rarity-purple: rgb(108, 66, 123);
+    --item-rarity-gold: rgb(135, 128, 24);
+}
+
+
+/* The font basis for the whole page. Change it locally when needed */
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--ui-white);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+body {
+  background-image: url("images/textura_light.png");
+  background-repeat: repeat;
+}
+
+iframe {
+    border: 0px;
+}
+
+.iframe-styling {
+    border: 0px;
+    height: 721px;
+    overflow: hidden;
+
+}
+
+
+/*********************************************************************/
+/* Button Styling */
+button {
+    background-image: url("images/textura_light.png");
+
+    border: 2px solid var(--ui-gray);
+    border-bottom: 2px solid var(--ui-black);
+    border-right: 2px solid var(--ui-black);
+
+    padding: 6px;
+}
+button:hover {
+    background-image: url("images/textura_light.png");
+}
+button:active{
+    background-image: url("images/textura_mid.png");
+
+    border: 2px solid var(--ui-black);
+    border-bottom: 2px solid var(--ui-darkgray);
+    border-right: 2px solid var(--ui-darkgray);
+
+    color: var(--ui-gray);
+}
+button:disabled{
+    background-image: url("images/textura_dark.png");
+
+    border: 2px solid var(--ui-darkgray);
+    border-bottom: 2px solid rgba(0,0,0, 0.3);
+    border-right: 2px solid rgba(0,0,0, 0.3);
+
+    color: var(--ui-darkgray);
+}
+
+.button-toggle{
+    background-image: url("images/textures/textura_mid.png");
+
+    border: 2px solid var(--ui-black);
+    border-bottom: 2px solid var(--ui-darkgray);
+    border-right: 2px solid var(--ui-darkgray);
+
+    color: var(--ui-gray);
+
+    /*prevent hovering a toggled button*/
+    pointer-events: none;
+}
+
+/*********************************************************************/
+/* Window Styling */
+.window-panel {
+    border: 2px solid var(--ui-gray);
+    border-bottom: 2px solid var(--ui-black);
+    border-right: 2px solid var(--ui-black);
+
+    background-image: url("images/textures/textura_light.png");
+
+}
+.window-title {
+    background-image: url("images/textures/textura_mid.png");
+    color: var(--ui-gray);
+    border-bottom: 1px solid var(--ui-black);
+
+    padding-top: 2px;
+    padding-left: 4px;
+    text-align: start;
+    display: flex;
+}
+.window-body {
+    padding: 4px;
+    padding-top: 1px;
+
+    text-align: start;
+}
+
+/* Inset kind of window, like a cut out */
+.window-inset, .item_slot{
+    border: 1px solid rgba(0,0,0, 0.7);
+    border-bottom: 1px solid var(--ui-gray);
+    border-right: 1px solid var(--ui-gray);
+
+    background-image: url("images/textures/textura_dark.png");
+    text-align: start;
+
+    line-height: 110%;
+}

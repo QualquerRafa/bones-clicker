@@ -22,17 +22,20 @@
 body {
   background-image: url("images/textura_light.png");
   background-repeat: repeat;
+
+  margin: 0px;
+  margin-top: 4px;
+  max-height: 2440px;
 }
 
 iframe {
     border: 0px;
+    position: relative;
 }
 
 .iframe-styling {
-    border: 0px;
     height: 721px;
     overflow: hidden;
-
 }
 
 

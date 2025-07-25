@@ -34,7 +34,7 @@ iframe {
 }
 
 .iframe-styling {
-    height: 721px;
+    max-height: 720px;
     overflow: hidden;
 }
 

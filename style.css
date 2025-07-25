@@ -28,14 +28,19 @@ body {
   max-height: 2440px;
 }
 
-iframe {
-    border: 0px;
+.iframe-styling {
+    max-height: 750px;
+    overflow: hidden;
     position: relative;
 }
 
-.iframe-styling {
-    max-height: 720px;
-    overflow: hidden;
+.censor {
+      position: absolute;
+      background-image: url('images/textura_light.png');
+      background-repeat: repeat-x;
+      top: 725px; /* Change this to the desired Y-position */
+      width: 100%; /* Optional: control image size */
+      height: 20px;
 }
 
 
